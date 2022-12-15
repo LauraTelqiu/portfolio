@@ -1,3 +1,4 @@
+import "./App.css"
 import NavBar from "./screens/navigationBar/NavBar";
 
 function App() {

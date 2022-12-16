@@ -7,7 +7,7 @@ function Technologies() {
   return (
     <div className="technologies__container" id="technologies">
       <div>
-        <h1 style={{ textAlign: 'center' }}>Some techonologies I use</h1>
+        <h1 style={{ textAlign: 'center' }}>SOME OF TECHNOLOGIES I USE</h1>
       </div>
       <div className="tech__cards__container">
         {techs.map((e, idx) => {
@@ -23,4 +23,4 @@ function Technologies() {
   )
 }
 
-export default Technologies
+export default Technologies;

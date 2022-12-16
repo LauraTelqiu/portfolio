@@ -6,6 +6,11 @@
 .navbar-light .navbar-nav .nav-link {
   color: var(--font-color) !important;
 
+
+}
+
+.nav-link {
+  background-color: var(--nav-color);
 }
 
 .navbar-light .navbar-brand {

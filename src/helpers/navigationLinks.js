@@ -16,7 +16,7 @@ export const navigationLinks = [
     ref: '#portfolio'
   },
   {
-    name: 'CONTACT',
-    ref: '#contact'
+    name: 'RESUME',
+    ref: '#resume'
   },
 ]

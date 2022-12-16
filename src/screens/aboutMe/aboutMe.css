@@ -4,6 +4,8 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  /* background-color: var(--nav-color) */
+
 }
 
 .about__container img {
@@ -12,12 +14,14 @@
   margin-bottom: 1rem;
   max-width: 200px;
   max-height: 200px;
-  object-fit: scale-down;
+  object-fit: cover;
+
 }
 
 
 .about__text {
   max-width: 600px;
+  /* color: var(--font-color) */
 }
 
 /*  ---------------- MEDIA QUERIES ----------- */

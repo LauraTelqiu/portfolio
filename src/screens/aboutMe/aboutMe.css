@@ -4,6 +4,8 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding: 5%;
+  padding-top: 7%;
   /* background-color: var(--nav-color) */
 
 }

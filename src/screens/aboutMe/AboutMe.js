@@ -21,6 +21,7 @@ function AboutMe() {
           thoroughness in accomplishing tasks, ensure that internal code and
           user-facing products are equally enjoyable to interact with!
         </p>
+
       </div>
     </div>
   );

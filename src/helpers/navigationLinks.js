@@ -17,6 +17,6 @@ export const navigationLinks = [
   },
   {
     name: 'RESUME',
-    ref: '#resume'
+    ref: 'https://drive.google.com/file/d/1UCuns5cvRJFisButbn6v9sgVnZj8H4Lq/view'
   },
 ]

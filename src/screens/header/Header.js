@@ -2,10 +2,13 @@ import React from "react";
 import "./header.css";
 import Typed from "react-typed";
 
+
 function Header() {
   return (
     <div className="main-info">
-      <h1>Software Engineer</h1>
+      <h1 style={{ fontSize: '50px' }}>Laura Telqiu</h1>
+      <h5>Software Engineer</h5>
+
       <Typed
         strings={[
           " ",
@@ -17,6 +20,7 @@ function Header() {
         backSpeed={50}
         loop
       />
+
     </div>
   );
 }

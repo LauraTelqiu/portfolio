@@ -14,6 +14,7 @@ function Portfolio() {
 
   function createModal(data) {
     return (
+
       <Modal
         show={modalShow}
         onHide={() => setModalShow(false)}
@@ -28,9 +29,10 @@ function Portfolio() {
         </Modal.Header>
         <Modal.Body>
           <p>{data.summary}</p>
-          <Image src={data.image} style={{ width: '200px' }} />
+          <Image src={data.image} style={{ width: '200px', textAlign: 'center' }} />
         </Modal.Body>
         <a id="portfolio__modal__link" href={data.link} target="_blank" rel="noreferrer">Go to site</a>
+        <a id="portfolio__modal__link" href={data.gitHub} target="_blank" rel="noreferrer">GitHub</a>
         <Modal.Footer>
           <div>Technologies used: </div>
           <p style={{ fontSize: '0.7rem', marginRight: 'auto' }}>{data.tech}</p>
@@ -48,15 +50,19 @@ function Portfolio() {
             setTempData({
               image: e.image,
               link: e.link,
+              gitHub: e.gitHub,
               name: e.name,
               summary: e.summary,
               tech: e.tech
             })
-            setModalShow(true)
+            setModalShow(true);
+
           }}
           src={e.image} />
         <div className="portfolio__click__info">&#x1F50E;&#xFE0E;</div>
         {createModal(tempData)}
+
+
       </Card>
     )
   })

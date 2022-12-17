@@ -46,6 +46,7 @@ export const techs = [
   {
     name: 'Github',
     iconName: 'github'
-  }
+  },
+
 
 ]

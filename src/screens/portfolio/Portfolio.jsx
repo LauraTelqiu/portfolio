@@ -8,6 +8,9 @@ import Image from 'react-bootstrap/Image'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 
+
+
+
 function Portfolio() {
   const [modalShow, setModalShow] = useState(false);
   const [tempData, setTempData] = useState({})
@@ -22,21 +25,21 @@ function Portfolio() {
         arial-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header>
+        <Modal.Header className='modal-header'>
           <Modal.Title id="contained-modal-title-vcenter">
             {data.name}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>{data.summary}</p>
-          <Image src={data.image} style={{ width: '200px', textAlign: 'center' }} />
+          <Image src={data.image} style={{ width: '200px', display: "block", marginLeft: "auto", marginRight: "auto" }} />
         </Modal.Body>
         <a id="portfolio__modal__link" href={data.link} target="_blank" rel="noreferrer">Go to site</a>
         <a id="portfolio__modal__link" href={data.gitHub} target="_blank" rel="noreferrer">GitHub</a>
         <Modal.Footer>
           <div>Technologies used: </div>
-          <p style={{ fontSize: '0.7rem', marginRight: 'auto' }}>{data.tech}</p>
-          <Button onClick={() => setModalShow(false)}>Close</Button>
+          <p style={{ fontSize: '0.8rem', fontWeight: "bold", marginRight: 'auto' }}>{data.tech}</p>
+          <Button style={{ backgroundColor: "var(--nav-color)" }} onClick={() => setModalShow(false)}>Close</Button>
         </Modal.Footer>
       </Modal>
     )

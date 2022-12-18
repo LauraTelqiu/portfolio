@@ -1,28 +1,33 @@
 import React from "react";
+import profilePic from "../../images/profile.jpg";
+// import Skills from "../components/Skills";
+import SocialMedia from "../../components/SocialMedia"
 import "./header.css";
-import Typed from "react-typed";
 
-
-function Header() {
+function Home() {
   return (
-    <div className="main-info">
-      <h1 style={{ fontSize: '50px' }}>Laura Telqiu</h1>
-      <h5>Software Engineer</h5>
+    <div className="home">
+      <div className="about">
+        <img src={profilePic} alt="profile"></img>
+        <h2> Hi, My Name is Laura</h2>
 
-      <Typed
-        strings={[
-          " ",
-          "Motivated by poroblem solving and completing challenges",
-          " ",
-          " ",
-        ]}
-        typeSpeed={40}
-        backSpeed={50}
-        loop
-      />
+        <div className="prompt">
+          <p>
+            Software Engineer motivated by problem solving and completing
+            challenges
+          </p>
+          <div className="smedia">
+            <SocialMedia />
+          </div>
 
+
+        </div>
+      </div>
+      {/* <div>
+        <Skills />
+      </div> */}
     </div>
   );
 }
 
-export default Header;
+export default Home;

@@ -15,7 +15,7 @@ export const portfolioData = [
   {
     name: "Expense Tracker",
     image: Expense,
-    summary: 'Application where users see,add and filter their expenses. their expenses.',
+    summary: 'Application where users can see,add and filter their expenses.',
     tech: "JavaScript, React, CSS",
     gitHub: "https://github.com/LauraTelqiu/Expense-Tracker",
     link: "https://expense-tracker-5b555b.netlify.app/",

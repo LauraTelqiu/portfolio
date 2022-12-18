@@ -20,7 +20,7 @@ function NavigationBar() {
         {/* <Navbar.Brand style={{ marginLeft: '1rem' }} href="#home">Laura Telqiu</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse style={{
-          justifyContent: 'flex-end', marginRight: '1rem', borderColor: 'none', backgroundColor: "hsl(210, 11%, 15%)"
+          justifyContent: 'center', paddingTop: 0, backgroundColor: "var(--nav-color)"
         }}>
           <Nav className="links" style={{ margin: '0 1rem' }}>
             {createLinks()}
